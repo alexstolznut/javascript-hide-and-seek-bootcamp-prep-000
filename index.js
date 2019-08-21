@@ -35,4 +35,4 @@ function deepestChild() {
 }
 
 getFirstSelector('div');
-increaseRankBy(1);
+// increaseRankBy(1);
