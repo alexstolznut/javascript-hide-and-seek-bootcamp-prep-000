@@ -27,11 +27,9 @@ function increaseRankBy(n) {
 }
 
 function deepestChild() {
-  const grandNode = document.querySelectorAll('div#grand-node').length;
+  const grandNode = document.querySelectorAll('div#grand-node');
 
-  for (let i = 0; i<grandNode; i = i + 1) {
-      console.log(grandNode[i].children)
-  }
+  return grandNode[0].children[0].children[0].children[0];
 
 
 }
