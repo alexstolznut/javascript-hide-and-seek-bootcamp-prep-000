@@ -15,7 +15,7 @@ function increaseRankBy(n) {
   console.log(ranked);
 
   for(let i = 0; i < document.getElementsByClassName('ranked-list')[0]; i = i + 1){
-    document.getElementsByClassName('ranked-list')[0].innerHTML = parseInt(document.getElementsByClassName('ranked-list')[0]) + parseInt(n);
+    document.getElementsByClassName('ranked-list')[0].children.innerHTML = parseInt(document.getElementsByClassName('ranked-list')[0].children) + parseInt(n);
   }
   for(let j = 0; j < list1.length; j = j + 1){
     list2[j].innerHTML = parseInt(list2[j].innerHTML) + parseInt(n);
