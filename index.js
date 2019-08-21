@@ -15,10 +15,10 @@ function increaseRankBy(n) {
 
 
   for(let i = 0; i < list1.length; i = i + 1){
-    list1[i].innerHTML = parseInt(list1[i].innerHTML) + parseInt(n);
+    list1[i].innerHTML = parseInt(list1[i].innerHTML) + parseInt(n) + parseInt(i);
   }
   for(let j = 0; j < list2.length; j = j + 1){
-    list2[j].innerHTML = parseInt(list2[j].innerHTML) + parseInt(n);
+    list2[j].innerHTML = parseInt(list2[j].innerHTML) + parseInt(n) + parseInt(i);
   }
   // for(let i = 0; i < ranked.length; i++){
   //   ranked[i].innerHTML = parseInt(ranked[i].innerHTML) + parseInt(n);
