@@ -13,12 +13,13 @@ function increaseRankBy(n) {
   const list1 = ranked[0].children;
   const list2 = ranked[1].children;
 
-
+  const start1 = 1;
   for(let i = 0; i < list1.length; i = i + 1){
-    list1[i].innerHTML = parseInt(list1[i].innerHTML) + parseInt(n) + parseInt(i);
+    list1[i].innerHTML = parseInt(start1) + parseInt(n) + parseInt(i);
   }
+  const start2 = 12;
   for(let j = 0; j < list2.length; j = j + 1){
-    list2[j].innerHTML = parseInt(list2[j].innerHTML) + parseInt(n) + parseInt(j);
+    list2[j].innerHTML = parseInt(start2) + parseInt(n) + parseInt(j);
   }
   // for(let i = 0; i < ranked.length; i++){
   //   ranked[i].innerHTML = parseInt(ranked[i].innerHTML) + parseInt(n);
