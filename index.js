@@ -12,12 +12,12 @@ function increaseRankBy(n) {
   const ranked = document.querySelectorAll('.ranked-list');
   const list1 = ranked[0].children;
   const list2 = ranked[1].children;
-  console.log(ranked);
+  console.log(lr);
 
-  for(let i = 0; i < document.getElementsByClassName('ranked-list')[0]; i = i + 1){
-    document.getElementsByClassName('ranked-list')[0].children.innerHTML = parseInt(document.getElementsByClassName('ranked-list')[0].children) + parseInt(n);
+  for(let i = 0; i < list1.length; i = i + 1){
+    list1[i].innerHTML = parseInt(list1[i].innerHTML) + parseInt(n);
   }
-  for(let j = 0; j < list1.length; j = j + 1){
+  for(let j = 0; j < list2.length; j = j + 1){
     list2[j].innerHTML = parseInt(list2[j].innerHTML) + parseInt(n);
   }
   // for(let i = 0; i < ranked.length; i++){
