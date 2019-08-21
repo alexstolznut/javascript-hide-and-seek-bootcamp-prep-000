@@ -29,7 +29,7 @@ function increaseRankBy(n) {
 function deepestChild() {
   const grandNode = document.querySelectorAll('div#grand-node');
 
-  return grandNode[0].children[0].children[0].children[0];
+  return grandNode[0].children[0].children[0].children[0].children[0];
 
 
 }
